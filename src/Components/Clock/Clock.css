@@ -1,0 +1,11 @@
+.clock{
+  color:black;
+  display: flex;
+  align-items: center;
+  justify-content: center ;
+}
+
+.clock span{
+  align-self: center;
+  margin-right: 20px;
+}

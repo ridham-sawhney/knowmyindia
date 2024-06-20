@@ -1,0 +1,36 @@
+
+.progressBar{
+    width: 100%;
+    appearance: none;
+   }
+   
+   
+   /* WebKit-based browsers */
+   .progressBar::-webkit-progress-bar {
+       background-color: black;
+       border-radius: 5px;
+       height: 8px;
+     }
+     
+     .progressBar::-webkit-progress-value {
+       background-color: rgb(0, 255, 234);
+       border-radius: 5px 0 0 5px;
+       height: 8px;
+       transition: width 0.2s ease;
+     }
+     
+     /* Firefox */
+     .progressBar::-moz-progress-bar {
+       background-color: rgb(0, 255, 234);
+       border-radius: 5px;
+       height: 8px;
+       transition: width 0.2s ease;
+     }
+     
+     /* For all other browsers */
+     .progressBar::-ms-fill {
+       background-color: rgb(0, 255, 234);
+       border-radius: 5px;
+       height: 8px;
+       transition: width 0.2s ease;
+     }

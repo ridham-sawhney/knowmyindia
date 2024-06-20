@@ -1,0 +1,66 @@
+.Quiz-Container {
+    height: 300px;
+    max-width: 700px;
+    min-width: 300px;
+    background-color: transparent;
+    border-top: 1px solid black;
+}
+
+.Question {
+    color: black;
+    font-family: "Roboto Mono", monospace;
+}
+
+.Quiz-Container .Answers {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping of buttons to the next line */
+    gap: 10px; /* Space between buttons */
+    justify-content: space-between; /* Space buttons evenly */
+}
+
+.Quiz-Container .Answers button {
+    flex: 1 1 calc(50% - 10px); /* Two buttons per row with spacing */
+    padding: 10px 20px;
+    font-size: 16px;
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+.Quiz-Container .Answers {
+    button {
+        position: relative;
+        /* display: inline-block; */
+        text-align: center;
+        font-size: 18px;
+        letter-spacing: 1px;
+        text-decoration: none;
+        color: #725AC1;
+        background: transparent;
+        cursor: pointer;
+        transition: ease-out 0.5s;
+        border: 2px solid #9dee47;
+        border-radius: 10px;
+        box-shadow: inset 0 0 0 0 #fed461;
+      }
+      
+      button:hover {
+        color: white;
+        box-shadow: inset 0 -100px 0 0 #fed461;
+      }
+      
+      button:active {
+        transform: scale(0.9);
+      }
+}
+
+@media (max-width: 450px) {
+    .Quiz-Container .Answers button {
+        flex: 1 1 100%; /* One button per row on narrow screens */
+    }
+
+    .Quiz-Container h2{
+        font-size: 18px;
+    }
+}
+
+
+

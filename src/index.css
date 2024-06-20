@@ -1,0 +1,26 @@
+:root {
+  line-height: 1.5;
+  font-weight: 400;
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-weight:bold;
+  font-style: normal;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background: rgb(255, 169, 47);
+  background: linear-gradient(210deg, rgba(255, 169, 47, 0.8828781512605042) 3%, rgba(255, 255, 255, 1) 46%, rgba(59, 220, 96, 1) 100%);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+body {
+  margin: 0;
+  display: flex;
+  min-width: 320px;
+  min-height: 100vh;
+}
