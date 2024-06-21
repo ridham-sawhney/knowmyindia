@@ -34,3 +34,48 @@
        height: 8px;
        transition: width 0.2s ease;
      }
+
+     
+     .progressBarCoolDown::-webkit-progress-value {
+       background-color: rgb(225, 255, 0);
+     }
+     
+     /* Firefox */
+     .progressBarCoolDown::-moz-progress-bar {
+       background-color: rgb(225, 255, 0);
+     }
+     
+     /* For all other browsers */
+     .progressBarCoolDown::-ms-fill {
+       background-color: rgb(225, 255, 0);
+     }
+
+
+     .progreesBarCorrect::-webkit-progress-value {
+       background-color: rgb(99, 240, 127);
+     }
+     
+     /* Firefox */
+     .progreesBarCorrect::-moz-progress-bar {
+       background-color: rgb(99, 240, 127);
+     }
+     
+     /* For all other browsers */
+     .progreesBarCorrect::-ms-fill {
+       background-color: rgb(99, 240, 127);
+     }
+
+     
+     .progressBarIncorrect::-webkit-progress-value {
+       background-color: rgb(250, 69, 69);
+     }
+     
+     /* Firefox */
+     .progressBarIncorrect::-moz-progress-bar {
+        background-color: rgb(250, 69, 69);
+     }
+     
+     /* For all other browsers */
+     .progressBarIncorrect::-ms-fill {
+        background-color: rgb(250, 69, 69);
+    }
