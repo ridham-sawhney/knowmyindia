@@ -47,10 +47,7 @@
         box-shadow: inset 0 0 0 0 #fed461;
     }
 
-    .answerButton:hover {
-        color: white;
-        box-shadow: inset 0 -100px 0 0 #fed461;
-    }
+  
 }
 
 @media (max-width: 450px) {
@@ -78,17 +75,23 @@
     background-color: #fed461 !important;
 }
 
-.correct:hover {
-    box-shadow: inset 0 -100px 0 0 rgb(149, 236, 149) !important;
-
+@media screen and (min-width:450px) {
+    .Quiz-Container .Answers .answerButton:hover {
+        color: white;
+        box-shadow: inset 0 -100px 0 0 #fed461;
+    }
+    .correct:hover {
+        box-shadow: inset 0 -100px 0 0 rgb(149, 236, 149) !important;
+    
+    }
+    
+    .incorrect:hover {
+        box-shadow: inset 0 -100px 0 0 rgb(237, 75, 75) !important;
+    
+    }
+    
+    .answered:hover {
+        box-shadow: inset 0 -100px 0 0 #fed461  !important;
+    }
 }
 
-.incorrect:hover {
-    box-shadow: inset 0 -100px 0 0 rgb(237, 75, 75) !important;
-
-}
-
-.answered:hover {
-    box-shadow: inset 0 -100px 0 0 #fed461  !important;
-
-}

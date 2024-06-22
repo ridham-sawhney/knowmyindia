@@ -4,6 +4,7 @@ import './Clock.css'
 export default function Clock({timer}){
     const [remainingTime,setRemainingTime] = useState(0);
     useEffect(()=>{
+        setRemainingTime(0)
         const interval=setInterval(() => {
             setRemainingTime((prevTime)=>prevTime+1000)
         }, 1000);

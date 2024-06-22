@@ -92,7 +92,7 @@ export default function Container() {
                 }
             </div>
             <br />
-            <Clock key={'clock' + timer} timer={timer} />
+            <Clock key={activeQuestionIndex} timer={timer} />
         </div>
     </>
     )
