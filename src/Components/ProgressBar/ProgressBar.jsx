@@ -1,33 +1,38 @@
 import { useEffect, useState } from 'react'
 import './ProgressBar.css'
 
-export default function ProgressBar({answers,answerState,timer,timeout}){
+export default function ProgressBar({answerState,timer,timeout}){
     const [remainingTime,setRemainingTime] = useState(0);
-    if(answerState=='Answered'){
-        timer = 3000;
-    }
-    else if(answerState == 'Correct' || answerState == 'Incorrect'){
-        timer=1000;
-    }
+
     useEffect(()=>{
+        const tout=setTimeout(timeout,timer);
+        console.log("Timeout Started: ", timer);
+        return (()=>{
+            console.log('Timeout Cleared',timer)
+            clearTimeout(tout);
+        })
+    },[timer,timeout])
+    
+    useEffect(()=>{
+        console.log('Interval Started');
         setRemainingTime(0);
         const interval=setInterval(() => {
             setRemainingTime((prevTime)=>prevTime+10)
         }, 10);
 
         return ()=>{
-            setRemainingTime(0)
+            console.log('Interval Cleared')
             clearInterval(interval)
         }
-    },[answerState,answers])
+    },[timeout])
 
     var classes= 'progressBar'
-    if(remainingTime >= timer){
-        setRemainingTime(0);
-        if(timer==10000)
-        timeout();
-        return(<></>)
-    }
+    // if(remainingTime >= timer){
+    //     setRemainingTime(0);
+    //     if(timer==10000)
+    //     timeout();
+    //     return(<></>)
+    // }
     if(answerState=='Answered'){
         classes='progressBar progressBarCoolDown';
     }

@@ -7,7 +7,10 @@ export default function Clock({timer}){
         const interval=setInterval(() => {
             setRemainingTime((prevTime)=>prevTime+1000)
         }, 1000);
-    },[])
+        return ()=>{
+            clearInterval(interval)
+        }
+    },[timer])
 
     if(remainingTime >= timer){
         return(<></>)
