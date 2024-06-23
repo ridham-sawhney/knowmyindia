@@ -6,22 +6,22 @@ export default function ProgressBar({answerState,timer,timeout}){
 
     useEffect(()=>{
         const tout=setTimeout(timeout,timer);
-        console.log("Timeout Started: ", timer);
+        // console.log("Timeout Started: ", timer);
         return (()=>{
-            console.log('Timeout Cleared',timer)
+            // console.log('Timeout Cleared',timer)
             clearTimeout(tout);
         })
     },[timer,timeout])
     
     useEffect(()=>{
-        console.log('Interval Started');
+        // console.log('Interval Started');
         setRemainingTime(0);
         const interval=setInterval(() => {
             setRemainingTime((prevTime)=>prevTime+10)
         }, 10);
 
         return ()=>{
-            console.log('Interval Cleared')
+            // console.log('Interval Cleared');
             clearInterval(interval)
         }
     },[timeout])

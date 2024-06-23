@@ -54,9 +54,9 @@ export default function Container() {
     else if(responseState == STATES.CORRECT || responseState == STATES.INCORRECT){
         timer=800;
     }
-    if (Questions.length == answers.length) {
+    if (Questions.length == answers.length && responseState==STATES.UNANSWERED) {
         return (<>
-            <Result answers={answers}/>
+            <Result answers={answers} Questions={Questions}/>
         </>)
     }
 

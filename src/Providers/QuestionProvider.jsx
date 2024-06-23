@@ -1,6 +1,22 @@
-
-
 export const QuestionList= [
+    {
+        "id": "Q1",
+        "question": "What is the capital of Andhra Pradesh?",
+        "answers": ["Amaravati", "Itanagar", "Dispur", "Patna"]
+    },
+    {
+        "id": "Q2",
+        "question": "What is the capital of Arunachal Pradesh?",
+        "answers": ["Itanagar", "Amaravati", "Dispur", "Raipur"]
+    },
+    {
+        "id": "Q3",
+        "question": "What is the capital of Assam?",
+        "answers": ["Dispur", "Patna", "Panaji", "Gandhinagar"]
+    }
+];
+
+export const QuestionList1= [
     {
         "id": "Q1",
         "question": "What is the capital of Andhra Pradesh?",
