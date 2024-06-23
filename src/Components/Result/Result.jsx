@@ -53,7 +53,7 @@ export default function Result({ answers, Questions }) {
                             <div className={isCorrect ? 'correctAnswer content': 'inCorrectAnswer content'}>
                                   <div className="questionText">{Questions[index].question}</div>
                                   <div className="answerContent">
-                                      <div className='answerText'>Selected Answer: {ans}</div>
+                                      <div className='answerText'>Selected Answer: {ans!=null ? ans: 'Not Answered'}</div>
                                       <div className='answerText'>Correct Answer: {Questions[index].answers[0]}</div>
                                   </div>
                             </div>
