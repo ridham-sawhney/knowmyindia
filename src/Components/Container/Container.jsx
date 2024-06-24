@@ -19,6 +19,11 @@ export default function Container() {
     const [responseState, updateResponseState] = useState(STATES.UNANSWERED);
     const shuffledAnswers = useRef([]);
     const activeQuestionIndex = responseState == STATES.UNANSWERED ? answers.length : answers.length - 1;
+    function restart(){
+        setQuestions([...QuestionList].sort(()=>Math.random()-0.5));
+        setAnswers([]);
+        updateResponseState(STATES.UNANSWERED);
+    }
     const handleSelectAnswer = useCallback((answer) => {
         console.log("Previous Answers",answers)
         console.log("Select Answer : "+answer);
@@ -56,7 +61,7 @@ export default function Container() {
     }
     if (Questions.length == answers.length && responseState==STATES.UNANSWERED) {
         return (<>
-            <Result answers={answers} Questions={Questions}/>
+            <Result answers={answers} Questions={Questions} restart={restart}/>
         </>)
     }
 

@@ -1,4 +1,4 @@
-export const QuestionList1= [
+export const QuestionList= [
     {
         "id": "Q1",
         "question": "What is the capital of Andhra Pradesh?",
@@ -16,7 +16,7 @@ export const QuestionList1= [
     }
 ];
 
-export const QuestionList= [
+export const QuestionList1= [
     {
         "id": "Q1",
         "question": "What is the capital of Andhra Pradesh?",
