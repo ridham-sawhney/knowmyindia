@@ -12,11 +12,11 @@ export default function Result({ answers, Questions ,restart}) {
         return ans != Questions[index].answers[0];
     }).length;
 
-    var notAnswered = Questions.length - correctAnswers - inCorrectAnswers;
+    // var notAnswered = Questions.length - correctAnswers - inCorrectAnswers;
 
     var correctPercentage = ((correctAnswers / Questions.length) * 100).toFixed(2);
     var inCorrectPercentage = ((inCorrectAnswers / Questions.length) * 100).toFixed(2);
-    var notAnsweredPercentage = 100 - correctPercentage - inCorrectPercentage;
+    var notAnsweredPercentage = (100 - (correctPercentage + inCorrectPercentage)).toFixed(2);
 
     console.log('Correct Answers: ' + correctAnswers)
     console.log('InCorrect Answers: ' + inCorrectAnswers)
