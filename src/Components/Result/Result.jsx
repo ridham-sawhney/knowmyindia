@@ -14,9 +14,9 @@ export default function Result({ answers, Questions ,restart}) {
 
     // var notAnswered = Questions.length - correctAnswers - inCorrectAnswers;
 
-    var correctPercentage = ((correctAnswers / Questions.length) * 100).toFixed(2);
-    var inCorrectPercentage = ((inCorrectAnswers / Questions.length) * 100).toFixed(2);
-    var notAnsweredPercentage = (100 - (correctPercentage + inCorrectPercentage)).toFixed(2);
+    var correctPercentage = ((correctAnswers / Questions.length) * 100).toFixed(0);
+    var inCorrectPercentage = ((inCorrectAnswers / Questions.length) * 100).toFixed(0);
+    var notAnsweredPercentage = (100 - (+correctPercentage + +inCorrectPercentage)).toFixed(0);
 
     console.log('Correct Answers: ' + correctAnswers)
     console.log('InCorrect Answers: ' + inCorrectAnswers)
