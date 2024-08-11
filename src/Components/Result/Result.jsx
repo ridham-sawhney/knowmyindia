@@ -18,9 +18,9 @@ export default function Result({ answers, Questions ,restart}) {
     var inCorrectPercentage = ((inCorrectAnswers / Questions.length) * 100).toFixed(0);
     var notAnsweredPercentage = (100 - (+correctPercentage + +inCorrectPercentage)).toFixed(0);
 
-    console.log('Correct Answers: ' + correctAnswers)
-    console.log('InCorrect Answers: ' + inCorrectAnswers)
-    console.log('Not Answers: ' + notAnswered)
+    // console.log('Correct Answers: ' + correctAnswers)
+    // console.log('InCorrect Answers: ' + inCorrectAnswers)
+    // console.log('Not Answers: ' + notAnswered)
     return (<>
 
         <div className="result-container">
