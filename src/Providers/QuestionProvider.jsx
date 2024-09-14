@@ -160,22 +160,22 @@ export const QuestionList= [
     {
         "id": "Q29",
         "question": "What is the capital of Andaman and Nicobar Islands?",
-        "answers": ["Port Blair", "Chandigarh", "Daman", "Delhi"]
+        "answers": ["Sri Vijaya Puram", "Chandigarh", "Daman", "Delhi"]
     },
     {
         "id": "Q30",
         "question": "What is the capital of Chandigarh?",
-        "answers": ["Chandigarh", "Port Blair", "Daman", "Delhi"]
+        "answers": ["Chandigarh", "Sri Vijaya Puram", "Daman", "Delhi"]
     },
     {
         "id": "Q31",
         "question": "What is the capital of Dadra and Nagar Haveli and Daman & Diu?",
-        "answers": ["Daman", "Chandigarh", "Port Blair", "Delhi"]
+        "answers": ["Daman", "Chandigarh", "Sri Vijaya Puram", "Delhi"]
     },
     {
         "id": "Q32",
         "question": "What is the capital of National Capital Territory of Delhi?",
-        "answers": ["Delhi", "Chandigarh", "Port Blair", "Daman"]
+        "answers": ["Delhi", "Chandigarh", "Sri Vijaya Puram", "Daman"]
     },
     {
         "id": "Q33",
